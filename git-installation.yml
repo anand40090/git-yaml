@@ -1,0 +1,8 @@
+---
+- name: tomcat installation
+  become: yes
+  hosts: app
+  tasks:
+       - name: tomcat
+         apt: package=git state=present
+
